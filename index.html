@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>シンプルカレンダー</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calendar" id="calendar">
+    <div class="header">
+      <div class="title" id="title">Loading...</div>
+      <div class="controls">
+        <button id="prevBtn" aria-label="前の月">◀</button>
+        <button id="nextBtn" aria-label="次の月">▶</button>
+        <select id="yearSelect" aria-label="年選択"></select>
+        <select id="monthSelect" aria-label="月選択"></select>
+        <!-- あるいは input[type="month"] を使う -->
+        <input type="month" id="monthPicker" />
+      </div>
+    </div>
+
+    <div class="grid" id="weekdays">
+      <!-- 曜日ヘッダ -->
+    </div>
+
+    <div class="grid" id="days">
+      <!-- 日付セル -->
+    </div>
+    <div style="margin-top:10px" class="muted">日曜始まり / 日本語表示</div>
+  </div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
