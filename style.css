@@ -11,7 +11,8 @@ body {
   padding: 20px;
 }
 .calendar {
-  width: 360px;
+  width: 70vw;
+  max-width: 1500px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
